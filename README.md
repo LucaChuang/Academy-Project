@@ -34,17 +34,20 @@ Precise prediction on desired wine quality based on physicochemical parameters w
 **Quality**: Wine experts graded the wine quality between 0 (very bad) and 10 (very excellent). The eventual quality score is the median of at least three evaluations made by the same wine experts.
 
 ## Results and Discussion 
-**Training and Validation Accuracy**
+**Training and Validation Accuracy:**
+
 From the training and validation accuracy plots we can see that the accuracy of the training has a trend of increasing while the accuracy of the validation is fluctuating severely, especially for the models with class weight modifiication and models with oversampling. The reason for fluctuation of validation accuracy from these models is that we force the net to pay attention to minorities or we change the distribution of input variables, which is not consistent with the reality. And we can only make changes on training dataset because we want to keep the reality of validation and test dataset. Then the inconsistency influences the accuracy greatly.
 
 
-**Training and Validation Loss**
+**Training and Validation Loss:**
+
 We can know that during the process of the training of the neural network, all the models, except models with class weight modification, have a almostly continuous downward training loss curve and a fluctuating validation loss curve which is as we expected. 
 
 As we all know, the FFNN uses gradient to update the weight. And the smoother the gradient is, the flatter the loss will be. If we modify the class wight, increasing the weight of the minority and the influence of them on gradient, the gradient will fluctuate, even vanishing or exploding. As a result, the training loss of models with class weight modification is also fluctuating.
 
 
-**Confusion Matrix and Classification Report**
+**Confusion Matrix and Classification Report:**
+
 1. Model vs Baseline
 All of our models are better than baseline.
 2. Classification vs Regression
