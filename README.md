@@ -34,28 +34,28 @@ Precise prediction on desired wine quality based on physicochemical parameters w
 **Quality**: Wine experts graded the wine quality between 0 (very bad) and 10 (very excellent). The eventual quality score is the median of at least three evaluations made by the same wine experts.
 
 ## Results and Discussion 
-### Training and Validation Accuracy
+**Training and Validation Accuracy**
 From the training and validation accuracy plots we can see that the accuracy of the training has a trend of increasing while the accuracy of the validation is fluctuating severely, especially for the models with class weight modifiication and models with oversampling. The reason for fluctuation of validation accuracy from these models is that we force the net to pay attention to minorities or we change the distribution of input variables, which is not consistent with the reality. And we can only make changes on training dataset because we want to keep the reality of validation and test dataset. Then the inconsistency influences the accuracy greatly.
 
 
-### Training and Validation Loss
+**Training and Validation Loss**
 We can know that during the process of the training of the neural network, all the models, except models with class weight modification, have a almostly continuous downward training loss curve and a fluctuating validation loss curve which is as we expected. 
 
 As we all know, the FFNN uses gradient to update the weight. And the smoother the gradient is, the flatter the loss will be. If we modify the class wight, increasing the weight of the minority and the influence of them on gradient, the gradient will fluctuate, even vanishing or exploding. As a result, the training loss of models with class weight modification is also fluctuating.
 
 
-### Confusion Matrix and Classification Report
-#### 1. Model vs Baseline
+**Confusion Matrix and Classification Report**
+1. Model vs Baseline
 All of our models are better than baseline.
-#### 2. Classification vs Regression
+2. Classification vs Regression
 There is no much difference between these two methods. Performances of them are both good at predicting majorities but not good for the minorities.
-#### 3. Original Sample vs Oversampling
+3. Original Sample vs Oversampling
 Though oversampling decrease the total accuracy a little bit, it can make our model better at predicting minorities than the original one. 
-#### 4. Original Variables vs VIF
+4. Original Variables vs VIF
 Not so much difference between these two methods. However, when the dataset is much too larger than what we have now, maybe VIF method can help you save the time for traning the model by decreasing the complexity of your net and still keeping the accuracy.
-#### 5. Original Class Weight vs Modified Class Weight
+5. Original Class Weight vs Modified Class Weight
 After modifying the class weight, the total accuracy can be higher than the original one. But in the meanwhile, the accuracy for majoities will decrease because of more attention to the minorities.
-#### 6. Original Class vs Decoded Class
+6. Original Class vs Decoded Class
 We decrease the class to make the distribution of the quality more normal. The result shows that we actually can use this method to increase our total accuracy. The inspiration of decodeing target is that we want to focus on the accuracy of quality class higher than 5.
 
 
