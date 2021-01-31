@@ -4,6 +4,8 @@ Author: Team 1
 * 2863088 Shen-Wei Chuang
 * 2868872 Simeng Deng
 * 2854110 Zhuo Chen
+## Data source: 
+https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
 
 ## Introduction/ Motivation/ Literature Review
 Before the pandemic, sales of wine have already slowed down. Older customers drink less as they age and winemakers find it hard to attract young consumers as some of them tend to seek a healthier lifestyle without drinking and others have multiple choices for beverages like beer and spirits.[1] US Industry data shows that Millennials consume more liquor and beer than wine. Besides, hard seltzer also becomes more and more popular among young consumers. [2] Traditional winemakers need to develop products that appeal to young customers, like single-serve packing and special flavors, to cope with the fierce competition.
