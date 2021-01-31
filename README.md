@@ -1,2 +1,2 @@
-# Academy-Project
-This repository includes my UConn's academy project
+# Deep learning project
+This repository includes Deep learning project 1
