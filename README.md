@@ -1,4 +1,4 @@
-# Project One- Red Wine Quality analysis
+# Project One Red Wine Quality analysis
 Author: Team 1
 * 2863031 Yunan Chen
 * 2863088 Shen-Wei Chuang
