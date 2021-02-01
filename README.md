@@ -71,7 +71,7 @@ After modifying the class weight, the total accuracy can be higher than the orig
 We decrease the class to make the distribution of the quality more normal. The result shows that we actually can use this method to increase our total accuracy. The inspiration of decodeing target is that we want to focus on the accuracy of quality class higher than 5.
 
 
-### Business Value
+## Business Value
 Whinries or wine dealers are always willing to save time and reduce cost to get more money. So our model can help them to monitor and evaluate their products before they sell wine.
 
 Most importantly, different whinries or wine dealers have different target customers. We have suggestions on choosing models to predict as well:
